@@ -10,9 +10,7 @@ public:
                 lsf = prices[i];
             }
             pist = prices[i] - lsf;
-            if(op < pist){
-                op = pist;
-            }
+            op = max(pist, op);
         }
         return op;
     }
