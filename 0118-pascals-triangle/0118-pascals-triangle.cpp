@@ -10,7 +10,6 @@ public:
             }
             tmp.push_back(1);
             res.push_back(tmp);
-            tmp.clear();
         }
         return res;
     }
