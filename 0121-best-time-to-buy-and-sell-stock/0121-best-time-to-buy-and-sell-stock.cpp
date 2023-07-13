@@ -9,8 +9,7 @@ public:
             if(prices[i] < lsf){
                 lsf = prices[i];
             }
-            pist = prices[i] - lsf;
-            op = max(pist, op);
+            op = max(prices[i]-lsf, op);
         }
         return op;
     }
