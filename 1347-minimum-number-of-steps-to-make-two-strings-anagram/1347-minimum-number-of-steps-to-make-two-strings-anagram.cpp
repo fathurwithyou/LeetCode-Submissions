@@ -9,7 +9,6 @@ public:
             if (word[i] < 0) neg -= word[i];
             if (word[i] > 0) pos += word[i];
         }
-        int ans = min(pos, neg) + abs(pos-neg);
-        return ans;
+        return min(pos, neg) + abs(pos-neg);
     }
 };
