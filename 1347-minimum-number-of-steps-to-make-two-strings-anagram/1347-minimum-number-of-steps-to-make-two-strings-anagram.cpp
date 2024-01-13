@@ -4,7 +4,6 @@ public:
         int word[26] = {0};
         for(auto i : t)word[i-97]++;
         for(auto i : s)word[i-97]--;
-        sort(word, word+26);
         int pos = 0, neg = 0;
         for(int i = 0; i < 26; i++){
             if (word[i] < 0) neg -= word[i];
