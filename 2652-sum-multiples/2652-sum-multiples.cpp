@@ -1,0 +1,12 @@
+class Solution {
+public:
+    int sumOfMultiples(int n) {
+        int res = 0;
+        for(int i  = 3;  i<=n; i++){
+            if(!(i%3)) res +=i;
+            else if(!(i%5)) res +=i;
+            else if(!(i%7)) res += i;
+        }
+        return res;
+    }
+};
